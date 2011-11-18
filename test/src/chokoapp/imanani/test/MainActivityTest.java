@@ -12,7 +12,7 @@ public class MainActivityTest extends
 	}
 
 	public void testShowHelloMessage() {
-		TextView v = (TextView)getActivity().findViewById(chokoapp.imanani.R.id.helloView);
-		assertTrue(v.getText().toString().startsWith("Hello World"));
+		TextView v = (TextView)getActivity().findViewById(chokoapp.imanani.R.id.dailyButton);
+		assertEquals("Daily", v.getText());
 	}
 }

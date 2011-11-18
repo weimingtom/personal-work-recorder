@@ -1,4 +1,4 @@
-package jp.co.jsol.chokoapp;
+package chokoapp.imanani;
 
 import android.app.Activity;
 import android.os.Bundle;

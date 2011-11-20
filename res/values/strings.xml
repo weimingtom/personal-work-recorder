@@ -14,4 +14,5 @@
     <string name="daily_summary">Daily</string>
     <string name="monthly_summary">Monthly</string>
     <string name="define_wbs">New Work</string>
+    <string name="selectWBS">Select your task</string>
 </resources>

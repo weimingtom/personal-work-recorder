@@ -7,5 +7,5 @@
    * [IssueRule Issue を起票する時のルール]
    * [CommitRule コミットする時のルール]
  * 開発環境の設定
-   * [EclipseSettings Eclipse の設定 (まだ)]
+   * [EclipseSettings Eclipse の設定]
    * [TortoiseSVNSettings TortoiseSVN の設定 (まだ)]

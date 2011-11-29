@@ -1,0 +1,5 @@
+#summary the setting for TortoiseSVN, the Subversion client on windows.
+
+== TortoiseSVN の設定 ==
+
+*COMMING SOON !*

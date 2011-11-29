@@ -1,24 +1,24 @@
 #summary the setting for the Eclipse IDE
 
-== Eclipse �̐ݒ� ==
+== Eclipse の設定 ==
 
-  * Java �R���p�C���̃o�[�W������ 1.6 �Ƃ���
-  * Android SDK �̃o�[�W�����͍ŐV���g�p����B
-    ** �A�b�v�f�[�g����A�ƌ���ꂽ���l�����]������
-    ** SDK �̃o�[�W�������オ�����ꍇ�́AEclipse �� ADT plugin ���o�[�W�����A�b�v���邱��
-  * Eclipse �ŗ��p���� subversion �v���O�C���� Subclipse �Ƃ���
-    ** SVNKit �̃o�[�W������ 1.6.x ���g�p���邱��
-    ** 1.7.x �ɂ������ꍇ�́ATortoiseSVN�Ƃ��o�[�W���������킹�邱��
+  * Java コンパイラのバージョンは 1.6 とする
+  * Android SDK のバージョンは最新を使用する。
+    ** アップデートしろ、と言われたら大人しく従うこと
+    ** SDK のバージョンが上がった場合は、Eclipse の ADT plugin もバージョンアップすること
+  * Eclipse で利用する subversion プラグインは Subclipse とする
+    ** SVNKit のバージョンは 1.6.x を使用すること
+    ** 1.7.x にしたい場合は、TortoiseSVNともバージョンを合わせること
 
-=== PROXY �̉z���� ===
+=== PROXY の越え方 ===
 
-  * Eclipse �̐ݒ��ʂŁu��ʁv���u�l�b�g���[�N�ݒ�v�� PROXY �̃z�X�g�A�h���X�ƃ|�[�g�ԍ����L�ڂ���
-    ** ���̐ݒ�� Eclipse ���v���O�C�����C���X�g�[�����鎞�Ɏg�p���邾���ŁASubclipse �ɂ͌��ʂȂ�
-  * Subclipse �̓z�[���f�B���N�g�������� ~/.subversion/config ���Q�Ƃ��Ă���
-    ** ���� Windows �̐l�� C:\Documents and Settings\<User Name>\Application Data\Subversion �̕ӂ�ɂ���Ǝv��
-    ** ������
+  * Eclipse の設定画面で「一般」→「ネットワーク設定」に PROXY のホストアドレスとポート番号を記載する
+    ** この設定は Eclipse がプラグインをインストールする時に使用するだけで、Subclipse には効果なし
+  * Subclipse はホームディレクトリ直下の ~/.subversion/config を参照している
+    ** 多分 Windows の人は C:\Documents and Settings\<User Name>\Application Data\Subversion の辺りにあると思う
+    ** そこに
         {{{
         http-proxy-host = 10.1.0.1
         http-proxy-port = 80
         }}}
-        �ȂǂƏ���
+        などと書く

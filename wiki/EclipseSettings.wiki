@@ -18,7 +18,7 @@
     ** 多分 Windows の人は C:\Documents and Settings\<User Name>\Application Data\Subversion の辺りにあると思う
     ** そこに
         {{{
-        http-proxy-host = 10.1.0.1
+        http-proxy-host = <your proxy host>
         http-proxy-port = 80
         }}}
         などと書く

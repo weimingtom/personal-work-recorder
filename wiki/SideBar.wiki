@@ -1,6 +1,7 @@
 #summary Wiki Sidebar
 #sidebar TableOfContents
-*メニュー*」
+<wiki:toc max_depth="1" />
+*メニュー*
  * [Abstraction 概要]
  * プロジェクトのルール
    * [IssueRule Issue を起票する時のルール]

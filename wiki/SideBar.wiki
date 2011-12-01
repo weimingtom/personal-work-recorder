@@ -8,4 +8,4 @@
    * [CommitRule コミットする時のルール]
  * 開発環境の設定
    * [EclipseSettings Eclipse の設定]
-   * [TortoiseSVNSettings TortoiseSVN の設定 (まだ)]
+   * [TortoiseSVNSettings TortoiseSVN の設定]

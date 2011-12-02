@@ -9,6 +9,10 @@
   * Eclipse で利用する subversion プラグインは Subclipse とする
     ** SVNKit のバージョンは 1.6.x を使用すること
     ** 1.7.x にしたい場合は、TortoiseSVNともバージョンを合わせること
+  * ソースのエンコーディングは UTF-8 とする
+    ** Mac OSX 版 Eclipse も、デフォルトは Shift_JIS なので要注意だ
+  * タブはスペース４文字とする
+    ** Text Editor だけでなく Formatter の設定も必要
 
 === PROXY の越え方 ===
 

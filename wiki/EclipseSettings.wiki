@@ -7,7 +7,7 @@
 || *Eclipse ADT のバージョン*    || Android SDK に追随                                            ||
 || *Eclipse subversion plugin*   || Subclipse (とは言え、別に何でもいい)                          ||
 || *SVNKit のバージョン*         || 1.3.5 くらい？ (subversion 1.6.x compatible)                  ||
-|| *ソースのエンコード*          || UTF-8                                                         ||
+|| *ソースのエンコード*          || UTF-8 (Mac の人もデフォルト Shift_JIS になっているので要注意) ||
 || *改行コード*                  || 環境に応じて。たたし、svn:eol-style=native で commit すること ||
 || *インデント*                  || スペース4個                                                   ||
 

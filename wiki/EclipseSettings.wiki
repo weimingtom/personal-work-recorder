@@ -2,27 +2,39 @@
 
 == Eclipse の設定 ==
 
-  * Java コンパイラのバージョンは 1.6 とする
-  * Android SDK のバージョンは最新を使用する。
-    ** アップデートしろ、と言われたら大人しく従うこと
-    ** SDK のバージョンが上がった場合は、Eclipse の ADT plugin もバージョンアップすること
-  * Eclipse で利用する subversion プラグインは Subclipse とする
-    ** SVNKit のバージョンは 1.6.x を使用すること
-    ** 1.7.x にしたい場合は、TortoiseSVNともバージョンを合わせること
-  * ソースのエンコーディングは UTF-8 とする
-    ** Mac OSX 版 Eclipse も、デフォルトは Shift_JIS なので要注意だ
-  * タブはスペース４文字とする
-    ** Text Editor だけでなく Formatter の設定も必要
+|| *Java コンパイラのバージョン* || 1.6                                                           ||
+|| *Android SDK のバージョン*    || 最新を使用する (2011/12/03 時点で {{{r15}}})                  ||
+|| *Eclipse ADT のバージョン*    || Android SDK に追随                                            ||
+|| *Eclipse subversion plugin*   || Subclipse (とは言え、別に何でもいい)                          ||
+|| *SVNKit のバージョン*         || 1.3.5 くらい？ (subversion 1.6.x compatible)                  ||
+|| *ソースのエンコード*          || UTF-8                                                         ||
+|| *改行コード*                  || 環境に応じて。たたし、svn:eol-style=native で commit すること ||
+|| *インデント*                  || スペース4個                                                   ||
+
+*[注意]*  Subversion のバージョンは 1.6.x あるいは 1.7.x で統一(例えば Subclipse とコマンドライン版の svn クライアント)しないと、両者に互換性がないので 1.7.x で作成したワーキングコピーは 1.6.x のクライアントでは扱えない
+
+=== Eclipse のフォーマッタの設定 ===
+Eclipse の設定でインデント幅をスペース4つにするには、複数の設定をする必要がある。
+どのような設定が必要十分かよくわかっていないが、小崎の設定をここに記載することで参考情報としたい。
+なお、小崎の自宅環境にインストールされた Eclipse は日本語化していないので、メニューの名前などは適当、会社で暇ができたら直す
+
+  # 「設定」→「全般」→「エディタ」→「テキストエディタ」で『表示されるタブ幅』を4に、『タブでスペースを挿入』にチェック
+  # ついでに『ホワイトスペースを表示』をチェックしておくと、ウザい感じでスペースが '・' でタブが '>' で表示されるようになる
+  # 「Java」→「コードスタイル」→「フォーマッタ」で新しくフォーマッタを作成する。新規作成ボタンを押すと元にするフォーマッタを指定できるので、Eclipse [Build-in]とか選んでおく
+  # 新たに作成したフォーマッタの「インデント」タブの『タブポリシー』を 'スペースのみ' に設定する
+  # ここにもインデント幅とタブ幅の設定があるのでいずれも 4にしておく
+  # その他のフォーマットは無用の混乱を招くだけなのでそっとしておく
+
 
 === PROXY の越え方 ===
 
-  * Eclipse の設定画面で「一般」→「ネットワーク設定」に PROXY のホストアドレスとポート番号を記載する
-    ** この設定は Eclipse がプラグインをインストールする時に使用するだけで、Subclipse には効果なし
-  * Subclipse はホームディレクトリ直下の ~/.subversion/config を参照している
-    ** 多分 Windows の人は C:\Documents and Settings\<User Name>\Application Data\Subversion の辺りにあると思う
-    ** そこに
-        {{{
-        http-proxy-host = <your proxy host>
-        http-proxy-port = 80
-        }}}
-        などと書く
+  # Eclipse の設定画面で「一般」→「ネットワーク設定」に PROXY のホストアドレスとポート番号を記載する
+  # Subclipse はホームディレクトリ直下の ~/.subversion/config を参照している。多分 Windows の人は C:\Documents and Settings\<User Name>\Application Data\Subversion の辺り
+  # そこに下記のような設定をする
+    {{{
+    http-proxy-host = <your proxy host>
+    http-proxy-port = 80
+    }}}
+
+Eclipse の設定はがプラグインをインストールする時に使用するだけで、Subclipse には効果がないので注意
+        

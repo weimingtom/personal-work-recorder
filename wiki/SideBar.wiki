@@ -9,5 +9,6 @@
  * 開発環境の設定
    * [EclipseSettings Eclipse の設定]
    * [TortoiseSVNSettings TortoiseSVN の設定]
+   * [ShellSettings Androidでbashを使う方法]
  * 設計
    * [TableDesign テーブル設計]

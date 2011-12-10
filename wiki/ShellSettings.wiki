@@ -1,3 +1,5 @@
+#summary Androidでbashを使う方法
+
 = Androidでbashを使う方法 =
 
  * bashをインストールし、PuTTYを使ってアクセスすることでTab補完が使えるようになります。

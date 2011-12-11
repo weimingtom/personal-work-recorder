@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today_summary">今日の作業時間合計</string>
+    <string name="start_recording">記録開始</string>
+    <string name="finish_recording">記録終了</string>
+    <string name="now_recording">記録中...</string>
+    <string name="task_code">作業コード</string>
+    <string name="task_name">作業概要</string>
+    <string name="update">入力反映</string>
+    <string name="daily_summary">日次集計</string>
+    <string name="monthly_summary">月次集計</string>
+    <string name="define_task">作業登録</string>
+    <string name="selectTask">作業を選択</string>
+    <string name="no_data">タスクはありません</string>
+    <string name="task_list">作業一覧</string>
+    <string name="delete_task">削除</string>
+    <string name="should_not_be_empty">空ではいけません</string>
+    <string name="has_the_same_code">既に同じコードがあります</string>
+    <string name="edit_task">作業内容を編集</string>
+</resources>

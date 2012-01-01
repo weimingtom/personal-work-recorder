@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">What\'s doing?</string>
+    <string name="today_summary">Today\'s Working Summary</string>
+    <string name="start_recording">Start</string>
+    <string name="finish_recording">Finish</string>
+    <string name="now_recording">Now recording...</string>
+    <string name="task_code">CODE</string>
+    <string name="task_name">DESCRIPTION</string>
+    <string name="update">Update</string>
+    <string name="daily_summary">Daily</string>
+    <string name="monthly_summary">Monthly</string>
+    <string name="define_task">New Task</string>
+    <string name="selectTask">Select your task</string>
+    <string name="task_list">Task List</string>
+    <string name="no_data">No Task</string>
+    <string name="delete_task">Delete</string>
+    <string name="should_not_be_empty">should not be empty</string>
+    <string name="has_the_same_code">You has the same code</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="cannot_delete">You cannot delete currently recording task</string>
+    <string name="daily_total">Daily Total</string>
+    <string name="daily_summary_title">The Daily Summary</string>
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+    <string name="select_date">Select Date</string>
+    <string name="dateformat">MMMMMMMM dd, yyyy</string>
+</resources>

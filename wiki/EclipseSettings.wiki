@@ -3,7 +3,7 @@
 == Eclipse の設定 ==
 
 || *Java コンパイラのバージョン* || 1.6                                                           ||
-|| *Android SDK のバージョン*    || 最新を使用する (2011/12/03 時点で {{{r15}}})                  ||
+|| *Android SDK のバージョン*    || 最新を使用する (2012/01/16 時点で {{{r16}}})                  ||
 || *Eclipse ADT のバージョン*    || Android SDK に追随                                            ||
 || *Eclipse subversion plugin*   || Subclipse (とは言え、別に何でもいい)                          ||
 || *SVNKit のバージョン*         || 1.3.5 くらい？ (subversion 1.6.x compatible)                  ||

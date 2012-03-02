@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res/chokoapp.imanani"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <chokoapp.imanani.DailyWorkSummaryView
+        android:id="@+id/summaryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/selectedDateView"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/selectedDateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/summaryView"
+        android:padding="5dp"
+        android:background="#8fdcdcdc"
+        android:textColor="#f0e68c"
+        android:text="@string/daily_summary_title"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/summaryView" >
+    </ListView>
+
+</RelativeLayout>

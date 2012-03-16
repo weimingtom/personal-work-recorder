@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/jp.gr.java_conf.choplin_j.imanani"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/startTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="@string/start_time"
+            android:textSize="14dp" />
+
+        <jp.gr.java_conf.choplin_j.imanani.DateTimeView
+            android:id="@+id/startTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="99/99 00:00:00"
+            android:textSize="24dp" />
+
+        <jp.gr.java_conf.choplin_j.imanani.ManipulateButton
+            android:id="@+id/startTimeUp"
+            style="@style/up_down_button_style"
+            android:src="@drawable/plus_button" />
+
+        <jp.gr.java_conf.choplin_j.imanani.ManipulateButton
+            android:id="@+id/startTimeDown"
+            style="@style/up_down_button_style"
+            android:src="@drawable/minus_button" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/endTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical"
+            android:gravity="right"
+            android:padding="3dp"
+            android:text="@string/end_time"
+            android:textSize="14dp" />
+
+        <jp.gr.java_conf.choplin_j.imanani.DateTimeView
+            android:id="@+id/endTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="99/99 00:00:00"
+            android:textSize="24dp" />
+
+        <jp.gr.java_conf.choplin_j.imanani.ManipulateButton
+            android:id="@+id/endTimeUp"
+            style="@style/up_down_button_style"
+            android:src="@drawable/plus_button" />
+
+        <jp.gr.java_conf.choplin_j.imanani.ManipulateButton
+            android:id="@+id/endTimeDown"
+            style="@style/up_down_button_style"
+            android:src="@drawable/minus_button" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/recordSeparator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_span="4"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_bright" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:padding="3dp"
+            android:text="@string/daily_total"
+            android:textSize="14dp" />
+
+        <jp.gr.java_conf.choplin_j.imanani.TimeView
+            android:id="@+id/totalTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="00:00:00"
+            android:gravity="right"
+            android:textSize="24dp" />
+
+        <jp.gr.java_conf.choplin_j.imanani.TimeView
+            android:id="@+id/differenceTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text=" 00:00:00"
+            android:textSize="24dp" />
+
+    </TableRow>
+
+</TableLayout>
